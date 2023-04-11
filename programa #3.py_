@@ -1,0 +1,13 @@
+total = 0
+recargo = 0
+
+nom = input("ingrese el nombre del estudiante:")
+mensu = float(input("ingrese mensualidad del estudiante:"))
+mont = float(input(f"perfecto, su mensualidad es de {mensu}, cuanto va pagar? "))
+if mont == mensu:
+ print("usted esta paz y salvo.")
+elif mont > mensu:
+ print(f"el estudiante esta paz y salvo, y cuenta con {mont - mensu} a favor para su proximo pago.") 
+elif mont < mensu :
+ print(f"El estudiante está moroso, se le aplicará un recargo de 30 dolares aparte del saldo pendiente.\nEl total a pagar es de:", (mensu - mont)+30)
+ 
